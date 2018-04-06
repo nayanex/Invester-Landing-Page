@@ -1,0 +1,26 @@
+{
+  "name": "invester-landing-page",
+  "version": "1.0.0",
+  "description": "This is the Landing Page of Invester - a Plataform to transform Brazil into a nation of investors",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange 'css/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+  },
+  "author": "Nayana Holanda de Abreu",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "node-sass": "^4.7.2",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0"
+  }
+}
