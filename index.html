@@ -9,7 +9,6 @@
  
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="node_modules/font-awesome/css/fontawesome.min.css">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <title>Invester - Democratizando Investimentos</title>
@@ -27,9 +26,7 @@
                 <div class="modal-body">
                     <h1>Obrigada por querer fazer parte da Invester!</h1>
                     <p>Seu E-mail foi cadastrado</p>
-                    <p>com sucesso Nayana Abreu.</p>
-                </div>
-                <div class="modal-footer">                    
+                    <p>com sucesso <span id="user_modal"></span>.</p>
                 </div>
             </div>
         </div>
@@ -37,7 +34,7 @@
     <header class="jumbotron">
         <div class="container">
             <div class="row">
-                <img src="img/logo-jumbotron.png" class="img-fluid">
+                <img src="img/logo-jumbotron.png" class="img-fluid jumbotron-logo">
             </div>
             <div class="row">
                 <div class="col-sm-6">
@@ -47,10 +44,10 @@
                 <div class="col-sm-6">
                     <div class="row">
                         <div class="col-xs-6">
-                            <img src="img/app-screen1.png" class="img-fluid">
+                            <img src="img/app-screen1.png" class="img-fluid jumbotron-img-1">
                         </div>
                         <div class="col-xs-6">
-                            <img src="img/app-screen2.png" class="img-fluid">
+                            <img src="img/app-screen2.png" class="img-fluid jumbotron-img-2">
                         </div>
                     </div>
                 </div>
@@ -89,7 +86,7 @@
                         <input type="email" class="form-control" id="emailid" name="email" placeholder="Digite seu e-mail aqui">
                     </div>
                     <div class="col-md-2">
-                        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">Enviar</button>
+                        <button onclick="setName();" type="submit" class="btn btn-primary" data-toggle="modal" data-target="#registerModal">Enviar</button>
                     </div>
                 </div>
                 <br>
@@ -112,7 +109,13 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <script>
+        var userName;
+        function setName(){
+            userName = document.getElementById("user_name").value;
+            document.getElementById("user_modal").innerHTML = userName;
+        }
+    </script>
 </body>
 
 </html>

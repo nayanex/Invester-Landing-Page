@@ -1,0 +1,25 @@
+.jumbotron {
+  background: linear-gradient(45deg, #00AFE6, #005DAC);
+  color: #FFFFFF;
+  height: 42%; }
+
+.jumbotron .jumbotron-img-1 {
+  width: 28%;
+  position: absolute;
+  height: auto;
+  z-index: 2;
+  top: 8%;
+  left: 50%; }
+
+.jumbotron .jumbotron-img-2 {
+  width: 28%;
+  height: auto;
+  position: absolute;
+  z-index: 2; }
+
+.jumbotron .jumbotron-logo {
+  width: 12.69%;
+  height: auto;
+  position: absolute;
+  z-index: 2;
+  top: 5%; }

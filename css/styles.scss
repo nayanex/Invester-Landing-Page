@@ -1,0 +1,41 @@
+$lt-blue: #00AFE6;
+$dk-blue: #005DAC;
+$gradient-angle: 45deg;
+$font-color: #FFFFFF;
+
+
+$background-dark: #512DA8;
+$background-light: #9575CD;
+$background-pale: #D1C4E9;
+
+.jumbotron {
+    //@include zero-margin(70px,30px);
+    background: linear-gradient($gradient-angle, $lt-blue, $dk-blue);
+    color:$font-color;
+    height: 42%;
+}
+
+.jumbotron {
+   .jumbotron-img-1 {
+        width: 28%;
+        position: absolute;
+        height: auto;
+        z-index: 2;
+        top: 8%;
+        left:50%;
+    };
+
+    .jumbotron-img-2 {
+        width: 28%;
+        height: auto;
+        position: absolute;
+        z-index: 2;
+    };
+    .jumbotron-logo {
+        width: 12.69%;
+        height: auto;
+        position: absolute;
+        z-index: 2;
+        top:5%;
+    };
+}
