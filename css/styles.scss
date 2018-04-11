@@ -1,41 +1,75 @@
 $lt-blue: #00AFE6;
 $dk-blue: #005DAC;
 $gradient-angle: 45deg;
-$font-color: #FFFFFF;
+$white: #FFFFFF;
 
+@mixin zero-margin($pad-up-dn, $pad-left-right) {
+	margin:0;
+	padding: $pad-up-dn $pad-left-right;
+}
 
-$background-dark: #512DA8;
-$background-light: #9575CD;
-$background-pale: #D1C4E9;
+.row-header{
+    @include zero-margin(0,0);
+} 
+
+.html{
+    @include zero-margin(0,0);
+    width:100%;
+} 
+
+.row-content {
+    @include zero-margin(0, 0);
+    max-height:100%;
+}
+
+.footer{
+    background-color: $lt-blue;
+    @include zero-margin(0,0);
+}
+
+body{
+    @include zero-margin(0,0);
+}
 
 .jumbotron {
-    //@include zero-margin(70px,30px);
+    @include zero-margin(0,0);
     background: linear-gradient($gradient-angle, $lt-blue, $dk-blue);
-    color:$font-color;
-    height: 42%;
+    color:$white;
 }
 
 .jumbotron {
    .jumbotron-img-1 {
-        width: 28%;
-        position: absolute;
+        position: relative;
+        max-width: 100%;
         height: auto;
-        z-index: 2;
-        top: 8%;
-        left:50%;
     };
-
     .jumbotron-img-2 {
-        width: 28%;
+        position: relative;
+        max-width: 100%;
         height: auto;
-        position: absolute;
-        z-index: 2;
+        top: 12%;
     };
     .jumbotron-logo {
-        width: 12.69%;
-        height: auto;
-        position: absolute;
-        z-index: 2;
+        position: relative;
+        max-height: 100%;
         top:5%;
-    };
+    }
+    p {
+        max-width: 100%;
+        font-size: 200%;
+        font-family: 'Helvetica LT Std, Roman'; 
+    }
+}
+
+.jumbotron-text {
+    text-align: center;
+    font-size: 2em;
+    vertical-align: middle;
+    margin: auto;
+}
+
+#carousel-button {
+    right:0px;
+    position: absolute;
+    bottom: 0px;
 }
