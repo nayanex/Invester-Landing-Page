@@ -1,59 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 .row-header {
-  margin: auto;
+  margin: 0 auto;
   padding: 0 0;
-  padding: 2% 0 2% 0; }
+  padding: 0; }
 
 .html {
-  margin: auto;
+  margin: 0 auto;
   padding: 0 0;
   width: 100%; }
 
 .row-content {
-  margin: auto;
-  padding: 0 0;
-  max-height: 100%; }
+  margin-top: 3%;
+  max-height: 100%;
+  font-family: Roboto;
+  font-weight: 350;
+  color: #707070;
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 5%;
+  padding-right: 13%;
+  padding-bottom: 5%;
+  padding-left: 13%; }
 
 .footer {
   background-color: #00AFE6;
-  margin: auto;
-  padding: 0 0; }
+  margin: 0 auto;
+  padding: 0 0;
+  font-size: 100%;
+  color: white;
+  padding: 1.5% 0 1.5% 0;
+  text-align: center; }
 
 body {
-  margin: auto;
+  margin: 0 auto;
   padding: 0 0; }
 
 .jumbotron {
-  margin: auto;
+  margin: 0 auto;
   padding: 0 0;
   background: linear-gradient(45deg, #00AFE6, #005DAC);
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  overflow: hidden; }
 
-.jumbotron .jumbotron-img-1 {
+.jumbotron .jumbotron-img {
   position: relative;
-  max-width: 100%;
-  height: auto; }
-
-.jumbotron .jumbotron-img-2 {
-  position: relative;
-  max-width: 100%;
+  min-width: 130%;
+  max-width: 130%;
   height: auto;
-  top: 12%; }
+  right: -10%;
+  bottom: -14%;
+  /* Set left edge of inner element to 50% of the parent element */
+  margin-left: 0%;
+  margin-top: -10%;
+  /* Move down by 30% of own width */
+  object-fit: cover; }
 
 .jumbotron .jumbotron-logo {
   position: relative;
   max-height: 100%;
-  top: 5%; }
-
-.jumbotron p {
-  max-width: 100%;
-  font-size: 200%;
-  font-family: 'Helvetica LT Std, Roman'; }
+  margin-top: 5%; }
 
 .jumbotron-text {
-  text-align: center;
-  font-size: 2em;
-  vertical-align: middle;
-  margin: auto; }
+  position: relative;
+  padding-top: 20%;
+  display: table-cell;
+  font-size: 3em; }
 
 #carousel-button {
   right: 0px;

@@ -1,16 +1,20 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
 $lt-blue: #00AFE6;
 $dk-blue: #005DAC;
 $gradient-angle: 45deg;
 $white: #FFFFFF;
+$gray-content: #707070;
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
-	margin: auto;
+	margin: 0 auto;
 	padding: $pad-up-dn $pad-left-right;
 }
 
 .row-header{
     @include zero-margin(0,0);
-    padding: 2% 0 2% 0;
+    padding: 0;
 } 
 
 .html{
@@ -19,13 +23,26 @@ $white: #FFFFFF;
 } 
 
 .row-content {
-    @include zero-margin(0, 0);
+    margin-top: 3%;
     max-height:100%;
+    font-family: Roboto;
+    font-weight: 350;
+    color: $gray-content;
+    text-align: center;
+    font-size: 1.5em;
+    padding-top: 5%;
+    padding-right: 13%;
+    padding-bottom: 5%;
+    padding-left: 13%;
 }
 
 .footer{
     background-color: $lt-blue;
     @include zero-margin(0,0);
+    font-size: 100%;
+    color: white;
+    padding: 1.5% 0 1.5% 0;
+    text-align: center;
 }
 
 body{
@@ -36,37 +53,41 @@ body{
     @include zero-margin(0,0);
     background: linear-gradient($gradient-angle, $lt-blue, $dk-blue);
     color:$white;
+    overflow: hidden;
 }
 
 .jumbotron {
-   .jumbotron-img-1 {
+   .jumbotron-img {
         position: relative;
-        max-width: 100%;
+        min-width: 130%;
+        max-width: 130%;
         height: auto;
-    };
-    .jumbotron-img-2 {
-        position: relative;
-        max-width: 100%;
-        height: auto;
-        top: 12%;
+        right:-10%;
+        //top: 6%;
+        bottom: -14%;
+        //top: 30%;
+        /* Set left edge of inner element to 50% of the parent element */
+        margin-left: 0%; 
+        margin-top: -10%;
+        /* Move down by 30% of own width */
+        object-fit: cover;
     };
     .jumbotron-logo {
         position: relative;
         max-height: 100%;
-        top:5%;
+        margin-top: 5%;
     }
-    p {
-        max-width: 100%;
-        font-size: 200%;
-        font-family: 'Helvetica LT Std, Roman'; 
-    }
+}
+ 
+.jumbotron-img-container {
+    
 }
 
 .jumbotron-text {
-    text-align: center;
-    font-size: 2em;
-    vertical-align: middle;
-    margin: auto;
+    position: relative;
+    padding-top: 20%;
+    display:table-cell;
+    font-size: 3em;
 }
 
 #carousel-button {
