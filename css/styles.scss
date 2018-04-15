@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: helvetica;
-    src: url(fonts/HelveticaLTStd-Roman.woff);
+    src: url("../fonts/helvetica-lt-std/helvetica-lt-std-roman.otf");
 }
 
 $lt-blue: #00AFE6;
@@ -40,6 +40,7 @@ $gray-content: #707070;
     padding-right: 10%;
     padding-bottom: 5%;
     padding-left: 10%;
+    overflow: hidden;
 }
 
 .footer{
@@ -97,9 +98,33 @@ body{
 
 .smiling-face {
     position: relative;
-    left: 2%;
+    left: 3%;
+    bottom: 0%;
     background-image: url("../img/wink.png");
-    width: 4.2%;
+    min-width: 5%;    
     height: auto;
     display:inline-block;
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+/*
+.mascote{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    min-width: 200%;
+    background-image:url('../img/mascote.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+    //background-position:left;
+}
+*/
+.mascote-container {
+    background-image: url("../img/mascote.png");
+    background-position-x: -0%;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: 25% auto;
+    //background-attachment: fixed;
 }
