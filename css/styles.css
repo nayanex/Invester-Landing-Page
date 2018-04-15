@@ -6,22 +6,23 @@
 
 .mainLoginInput::-webkit-input-placeholder {
   font-family: Roboto;
-  color: #707070; }
+  color: #ACACAC;
+  font-size: 0.8em; }
 
 .mainLoginInput:-ms-input-placeholder {
   font-family: Roboto;
-  color: #707070;
-  font-size: 0.1em; }
+  color: #ACACAC;
+  font-size: 0.8em; }
 
 .mainLoginInput:-moz-placeholder {
   font-family: Roboto;
-  color: #707070;
-  font-size: 0.1em; }
+  color: #ACACAC;
+  font-size: 0.8em; }
 
 .mainLoginInput::-moz-placeholder {
   font-family: Roboto;
-  color: #707070;
-  font-size: 0.1em; }
+  color: #ACACAC;
+  font-size: 0.8em; }
 
 .row-header {
   margin: 0 auto;
@@ -120,3 +121,44 @@ body {
   font-family: Roboto;
   font-weight: 380;
   font-size: 0.6em; }
+
+.modal-header {
+  border: none; }
+
+img.modal-title {
+  position: center;
+  margin-bottom: 15%;
+  margin-top: 0%;
+  position: relative;
+  left: 0%;
+  min-width: 40%; }
+
+.modal-body {
+  font-family: Roboto;
+  font-weight: 350;
+  color: #707070;
+  text-align: center;
+  font-size: 1.5em;
+  background-image: url("../img/mascote.png");
+  background-position-x: 0;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  background-size: 30% auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 25%; }
+
+@media (min-width: 768px) {
+  .modal {
+    text-align: center; }
+    .modal:before {
+      content: '';
+      height: 100%;
+      width: 1px;
+      display: inline-block;
+      vertical-align: middle; }
+    .modal .modal-dialog {
+      text-align: left;
+      margin: 10px auto;
+      display: inline-block;
+      vertical-align: middle; } }

@@ -11,28 +11,30 @@ $dk-blue: #005DAC;
 $gradient-angle: 45deg;
 $white: #FFFFFF;
 $gray-content: #707070;
+$input-text-color: #ACACAC;
 
 .mainLoginInput::-webkit-input-placeholder {
     font-family: Roboto;
-    color: $gray-content;
+    color: $input-text-color;
+    font-size: 0.8em;
 }
   
-  .mainLoginInput:-ms-input-placeholder {
+.mainLoginInput:-ms-input-placeholder {
     font-family: Roboto;
-    color: $gray-content;
-    font-size: 0.1em;
+    color: $input-text-color;
+    font-size: 0.8em;
 }
   
-  .mainLoginInput:-moz-placeholder {
+.mainLoginInput:-moz-placeholder {
     font-family: Roboto;
-    color: $gray-content;
-    font-size: 0.1em;
+    color: $input-text-color;
+    font-size: 0.8em;
 }
   
 .mainLoginInput::-moz-placeholder {
     font-family: Roboto;
-    color: $gray-content;
-    font-size: 0.1em;
+    color: $input-text-color;
+    font-size: 0.8em;
 }
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
@@ -146,5 +148,54 @@ body{
     font-family: Roboto;
     font-weight: 380;
     font-size: 0.6em;
-    
+}
+
+.modal-header {
+    border:none;
+}
+
+img.modal-title {
+    position: center;
+    margin-bottom: 15%;
+    margin-top: 0%;
+    position: relative;
+    left: 0%;
+    min-width: 40%;
+}
+
+.modal-body {
+    font-family: Roboto;
+    font-weight: 350;
+    color: $gray-content;
+    text-align: center;
+    font-size: 1.5em;
+    background-image: url("../img/mascote.png");
+    background-position-x: 0;
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    background-size: 30% auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 25%;
+}
+
+.modal {
+    @media(min-width: 768px) {
+        text-align: center;
+
+        &:before {
+            content: '';
+            height: 100%;
+            width: 1px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .modal-dialog {
+            text-align: left;
+            margin: 10px auto;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
 }
