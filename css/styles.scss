@@ -1,6 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 
+@font-face {
+    font-family: helvetica;
+    src: url(fonts/HelveticaLTStd-Roman.woff);
+}
+
 $lt-blue: #00AFE6;
 $dk-blue: #005DAC;
 $gradient-angle: 45deg;
@@ -15,6 +20,7 @@ $gray-content: #707070;
 .row-header{
     @include zero-margin(0,0);
     padding: 0;
+    height: 40%;
 } 
 
 .html{
@@ -23,17 +29,17 @@ $gray-content: #707070;
 } 
 
 .row-content {
-    margin-top: 3%;
+    margin-top: 5%;
     max-height:100%;
     font-family: Roboto;
     font-weight: 350;
     color: $gray-content;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.6em;
     padding-top: 5%;
-    padding-right: 13%;
+    padding-right: 10%;
     padding-bottom: 5%;
-    padding-left: 13%;
+    padding-left: 10%;
 }
 
 .footer{
@@ -54,23 +60,20 @@ body{
     background: linear-gradient($gradient-angle, $lt-blue, $dk-blue);
     color:$white;
     overflow: hidden;
+    font-family: helvetica;
+    width: 100%;
+    height: 100%;
+    min-height: 120%;
 }
 
 .jumbotron {
    .jumbotron-img {
         position: relative;
-        min-width: 130%;
-        max-width: 130%;
+        min-width: 120%;
         height: auto;
         right:-10%;
-        //top: 6%;
         bottom: -14%;
-        //top: 30%;
-        /* Set left edge of inner element to 50% of the parent element */
-        margin-left: 0%; 
         margin-top: -10%;
-        /* Move down by 30% of own width */
-        object-fit: cover;
     };
     .jumbotron-logo {
         position: relative;
@@ -79,19 +82,24 @@ body{
     }
 }
  
-.jumbotron-img-container {
-    
-}
-
 .jumbotron-text {
     position: relative;
-    padding-top: 20%;
+    padding-top: 17%;
     display:table-cell;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 #carousel-button {
     right:0px;
     position: absolute;
     bottom: 0px;
+}
+
+.smiling-face {
+    position: relative;
+    left: 2%;
+    background-image: url("../img/wink.png");
+    width: 4.2%;
+    height: auto;
+    display:inline-block;
 }
