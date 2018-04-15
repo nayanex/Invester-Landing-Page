@@ -12,6 +12,29 @@ $gradient-angle: 45deg;
 $white: #FFFFFF;
 $gray-content: #707070;
 
+.mainLoginInput::-webkit-input-placeholder {
+    font-family: Roboto;
+    color: $gray-content;
+}
+  
+  .mainLoginInput:-ms-input-placeholder {
+    font-family: Roboto;
+    color: $gray-content;
+    font-size: 0.1em;
+}
+  
+  .mainLoginInput:-moz-placeholder {
+    font-family: Roboto;
+    color: $gray-content;
+    font-size: 0.1em;
+}
+  
+.mainLoginInput::-moz-placeholder {
+    font-family: Roboto;
+    color: $gray-content;
+    font-size: 0.1em;
+}
+
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin: 0 auto;
 	padding: $pad-up-dn $pad-left-right;
@@ -45,11 +68,15 @@ $gray-content: #707070;
 
 .footer{
     background-color: $lt-blue;
-    @include zero-margin(0,0);
     font-size: 100%;
     color: white;
-    padding: 1.5% 0 1.5% 0;
+    padding: 1.5% 10% 1.5% 10%;
     text-align: center;
+    background-image: url("../img/logo-footer.png");
+    background-position-x: 98%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    background-size: 3% contain;
 }
 
 body{
@@ -98,33 +125,26 @@ body{
 
 .smiling-face {
     position: relative;
-    left: 3%;
-    bottom: 0%;
-    background-image: url("../img/wink.png");
-    min-width: 5%;    
-    height: auto;
+    left: 0%;
     display:inline-block;
-    background-repeat: no-repeat;
-    background-size:contain;
+    height: auto;
 }
 
-/*
-.mascote{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    min-width: 200%;
-    background-image:url('../img/mascote.png');
-    background-repeat:no-repeat;
-    background-size:contain;
-    //background-position:left;
-}
-*/
 .mascote-container {
     background-image: url("../img/mascote.png");
-    background-position-x: -0%;
+    background-position-x: 0;
     background-position-y: 100%;
     background-repeat: no-repeat;
     background-size: 25% auto;
-    //background-attachment: fixed;
+}
+
+.submit-button {
+    background-color:$lt-blue;
+    border-color:$lt-blue;
+    padding-left: 25%;
+    padding-right: 25%;
+    font-family: Roboto;
+    font-weight: 380;
+    font-size: 0.6em;
+    
 }

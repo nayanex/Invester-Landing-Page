@@ -4,6 +4,25 @@
   font-family: helvetica;
   src: url("../fonts/helvetica-lt-std/helvetica-lt-std-roman.otf"); }
 
+.mainLoginInput::-webkit-input-placeholder {
+  font-family: Roboto;
+  color: #707070; }
+
+.mainLoginInput:-ms-input-placeholder {
+  font-family: Roboto;
+  color: #707070;
+  font-size: 0.1em; }
+
+.mainLoginInput:-moz-placeholder {
+  font-family: Roboto;
+  color: #707070;
+  font-size: 0.1em; }
+
+.mainLoginInput::-moz-placeholder {
+  font-family: Roboto;
+  color: #707070;
+  font-size: 0.1em; }
+
 .row-header {
   margin: 0 auto;
   padding: 0 0;
@@ -31,12 +50,15 @@
 
 .footer {
   background-color: #00AFE6;
-  margin: 0 auto;
-  padding: 0 0;
   font-size: 100%;
   color: white;
-  padding: 1.5% 0 1.5% 0;
-  text-align: center; }
+  padding: 1.5% 10% 1.5% 10%;
+  text-align: center;
+  background-image: url("../img/logo-footer.png");
+  background-position-x: 98%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 3% contain; }
 
 body {
   margin: 0 auto;
@@ -79,30 +101,22 @@ body {
 
 .smiling-face {
   position: relative;
-  left: 3%;
-  bottom: 0%;
-  background-image: url("../img/wink.png");
-  min-width: 5%;
-  height: auto;
+  left: 0%;
   display: inline-block;
-  background-repeat: no-repeat;
-  background-size: contain; }
+  height: auto; }
 
-/*
-.mascote{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    min-width: 200%;
-    background-image:url('../img/mascote.png');
-    background-repeat:no-repeat;
-    background-size:contain;
-    //background-position:left;
-}
-*/
 .mascote-container {
   background-image: url("../img/mascote.png");
-  background-position-x: -0%;
+  background-position-x: 0;
   background-position-y: 100%;
   background-repeat: no-repeat;
   background-size: 25% auto; }
+
+.submit-button {
+  background-color: #00AFE6;
+  border-color: #00AFE6;
+  padding-left: 25%;
+  padding-right: 25%;
+  font-family: Roboto;
+  font-weight: 380;
+  font-size: 0.6em; }
