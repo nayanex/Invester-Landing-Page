@@ -16,25 +16,25 @@ $input-text-color: #ACACAC;
 .mainLoginInput::-webkit-input-placeholder {
     font-family: Roboto;
     color: $input-text-color;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
   
 .mainLoginInput:-ms-input-placeholder {
     font-family: Roboto;
     color: $input-text-color;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
   
 .mainLoginInput:-moz-placeholder {
     font-family: Roboto;
     color: $input-text-color;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
   
 .mainLoginInput::-moz-placeholder {
     font-family: Roboto;
     color: $input-text-color;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {

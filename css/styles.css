@@ -7,22 +7,22 @@
 .mainLoginInput::-webkit-input-placeholder {
   font-family: Roboto;
   color: #ACACAC;
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 
 .mainLoginInput:-ms-input-placeholder {
   font-family: Roboto;
   color: #ACACAC;
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 
 .mainLoginInput:-moz-placeholder {
   font-family: Roboto;
   color: #ACACAC;
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 
 .mainLoginInput::-moz-placeholder {
   font-family: Roboto;
   color: #ACACAC;
-  font-size: 0.8em; }
+  font-size: 0.9em; }
 
 .row-header {
   margin: 0 auto;

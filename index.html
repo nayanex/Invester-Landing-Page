@@ -14,7 +14,7 @@
     <title>Invester - Democratizando Investimentos</title>
 </head>
 
-<body>
+<body onload="typeWriter()">
     <div id="registerModal" class="modal fade" role="dialog">
         <div class="modal-dialog modal-lg" role="content">
             <!--Modal content-->
@@ -23,7 +23,7 @@
                     &nbsp;
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body justify-content-center">
                     <img class="modal-title logo-modal-invester" src="img/logo-modal.png" height="auto" width="25%">
                     <h3>Obrigada por querer fazer parte da Invester!</h3><br>
                     Seu E-mail foi cadastrado<br>
@@ -38,9 +38,7 @@
                 <img src="img/logo-jumbotron.png" class="img-fluid jumbotron-logo">
             </div>
             <div class="row row-header">
-                <div class="col-sm-5 jumbotron-text">
-                    Olá seja bem vindo
-                    eu sou Invester.
+                <div id="typing" class="col-sm-5 jumbotron-text">                  
                 </div>
                 <div class="col-sm-7">
                     <img src="img/img-jumbo.png" class="img-fluid jumbotron-img">
@@ -75,11 +73,11 @@
                 <div class="form-group row">
                     <div class="col-lg-6">
                         <div class="input-group">
-                            <input type="text" class="form-control mainLoginInput" id="user_name" name="user_name" placeholder="Digite seu nome completo aqui">
+                            <input type="text" class="form-control mainLoginInput" id="user_name" name="user_name" placeholder="Digite seu nome completo aqui" required>
                         </div>
                     </div>
                     <div class="col-lg-4 mr-0">
-                        <input type="email" class="form-control mainLoginInput" id="emailid" name="email" placeholder="Digite seu e-mail aqui">
+                        <input type="email" class="form-control mainLoginInput" id="emailid" name="email" placeholder="Digite seu e-mail aqui" required>
                     </div>
                     <div class="col-lg-2 ml-0">
                         <button onclick="setName();" type="submit" class="btn btn-primary submit-button" data-toggle="modal" data-target="#registerModal">ENVIAR</button>
@@ -108,9 +106,21 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
         var userName;
+        var i = 0;
+        var txt = 'Olá seja bem vindo eu sou Invester.';
+        var speed = 100;
+
         function setName(){
             userName = document.getElementById("user_name").value;
             document.getElementById("user_modal").innerHTML = userName;
+        }
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typing").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
         }
     </script>
 </body>
