@@ -1,9 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
-
 @font-face {
     font-family: helvetica;
     src: url("../fonts/helvetica-lt-std/helvetica-lt-std-roman.otf");
+}
+
+@font-face {
+    font-family: Roboti;
+    src: url("../fonts/roboto/Roboto-Regular");
 }
 
 $lt-blue: #00AFE6;
