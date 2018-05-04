@@ -70,7 +70,7 @@
         </div>
         <div class="row row-content justify-content-center mt-0 pt-0 pb-5">
             <div class="col-sm-9">
-                <form method="POST" action="/new-user" class="form-group row">
+                <form method="POST" action="/new-user" class="form-group row" id="registration">
                     <div class="col-lg-6">
                         <div class="input-group">
                             <input type="text" class="form-control mainLoginInput" id="name" name="name" placeholder="Digite seu nome completo aqui" required>
@@ -111,7 +111,7 @@
         var speed = 100;
 
         function setName(){
-            userName = document.getElementById("user-name").value;
+            userName = document.getElementById("name").value;
             document.getElementById("user-modal").innerHTML = userName;
         }
 
@@ -122,6 +122,20 @@
                 setTimeout(typeWriter, speed);
             }
         }
+
+        $(document).ready(function () {
+            $('#registration').on('submit', function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '/new-user',
+                    type: 'post',
+                    data: $('#registration').serialize(),
+                    success: function () {
+                        console.log('iHUUUUUUU');   
+                    }
+                });
+            });
+        });
     </script>
 </body>
 </html>

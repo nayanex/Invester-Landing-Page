@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 require('mongoose-type-email');
-mongoose.connect('mongodb://heroku_zg1dkqqt:vvm3t52m8rgkt9aa4d13fqa5qf@ds113620-a0.mlab.com:13620,ds113620-a1.mlab.com:13620/heroku_zg1dkqqt?replicaSet=rs-ds113620');
+mongoose.connect('mongodb://localhost:27017/invester');
 
 var app = express();
 
@@ -25,19 +25,12 @@ app.post("/new-user", (req, res) => {
     var myData = new User(req.body);
     myData.save()
       .then(item => {
-        //res.send("item saved to database");
+        console.log("item saved to database");
       })
       .catch(err => {
         res.status(400).send("unable to save to database");
+        process.exit(1);
       });
   });
-
-app.get('/view-users',  function(req, res) {
-    dbConn.then(function(db) {
-        db.collection('users').find({}).toArray().then(function(feedbacks) {
-            res.status(200).json(feedbacks);
-        });
-    });
-});
 
 app.listen(process.env.PORT || 3000, process.env.IP || '0.0.0.0' );
