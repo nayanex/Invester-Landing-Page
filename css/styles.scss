@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: Roboti;
-    src: url("../fonts/roboto/Roboto-Regular");
+    font-family: Roboto;
+    src: url("../fonts/roboto/Roboto-Light.ttf");
 }
 
 $lt-blue: #00AFE6;
@@ -59,7 +59,7 @@ $input-text-color: #ACACAC;
     margin-top: 5%;
     max-height:100%;
     font-family: Roboto;
-    font-weight: 350;
+    font-weight: 100;
     color: $gray-content;
     text-align: center;
     font-size: 1.6em;
@@ -167,7 +167,7 @@ img.modal-title {
 
 .modal-body {
     font-family: Roboto;
-    font-weight: 350;
+    font-weight: 100;
     color: $gray-content;
     text-align: center;
     font-size: 1.5em;

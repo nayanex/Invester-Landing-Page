@@ -27,7 +27,7 @@
                     <img class="modal-title logo-modal-invester" src="img/logo-modal.png" height="auto" width="25%">
                     <h3>Obrigada por querer fazer parte da Invester!</h3><br>
                     Seu E-mail foi cadastrado<br>
-                    com sucesso <span id="user_modal"></span>.
+                    com sucesso <span id="user-modal"></span>.
                 </div>
             </div>
         </div>
@@ -70,19 +70,19 @@
         </div>
         <div class="row row-content justify-content-center mt-0 pt-0 pb-5">
             <div class="col-sm-9">
-                <div class="form-group row">
+                <form method="POST" action="/new-user" class="form-group row">
                     <div class="col-lg-6">
                         <div class="input-group">
-                            <input type="text" class="form-control mainLoginInput" id="user_name" name="user_name" placeholder="Digite seu nome completo aqui" required>
+                            <input type="text" class="form-control mainLoginInput" id="name" name="name" placeholder="Digite seu nome completo aqui" required>
                         </div>
                     </div>
                     <div class="col-lg-4 mr-0">
-                        <input type="email" class="form-control mainLoginInput" id="emailid" name="email" placeholder="Digite seu e-mail aqui" required>
+                        <input type="email" class="form-control mainLoginInput" id="email" name="email" placeholder="Digite seu e-mail aqui" required>
                     </div>
                     <div class="col-lg-2 ml-0">
-                        <button onclick="setName();" type="submit" class="btn btn-primary submit-button" data-toggle="modal" data-target="#registerModal">ENVIAR</button>
+                        <input onclick="setName();" type="submit" class="btn btn-primary submit-button" data-toggle="modal" data-target="#registerModal" value="ENVIAR">
                     </div>
-                </div>
+                </form>
                 <br>
                 Prometemos que não enviaremos Spam, pode confiar <img src="img/wink.png" class="smiling-face"><br><br><br>
             </div>
@@ -111,8 +111,8 @@
         var speed = 100;
 
         function setName(){
-            userName = document.getElementById("user_name").value;
-            document.getElementById("user_modal").innerHTML = userName;
+            userName = document.getElementById("user-name").value;
+            document.getElementById("user-modal").innerHTML = userName;
         }
 
         function typeWriter() {
@@ -124,5 +124,4 @@
         }
     </script>
 </body>
-
 </html>

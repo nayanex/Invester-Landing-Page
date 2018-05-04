@@ -1,8 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @font-face {
   font-family: helvetica;
   src: url("../fonts/helvetica-lt-std/helvetica-lt-std-roman.otf"); }
+
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/roboto/Roboto-Light.ttf"); }
 
 .mainLoginInput::-webkit-input-placeholder {
   font-family: Roboto;
@@ -39,7 +41,7 @@
   margin-top: 5%;
   max-height: 100%;
   font-family: Roboto;
-  font-weight: 350;
+  font-weight: 100;
   color: #707070;
   text-align: center;
   font-size: 1.6em;
@@ -135,7 +137,7 @@ img.modal-title {
 
 .modal-body {
   font-family: Roboto;
-  font-weight: 350;
+  font-weight: 100;
   color: #707070;
   text-align: center;
   font-size: 1.5em;

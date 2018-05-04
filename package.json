@@ -20,9 +20,13 @@
     "parallelshell": "^3.0.2"
   },
   "dependencies": {
+    "body-parser": "^1.18.2",
     "bootstrap": "^4.0.0-alpha.6",
     "express": "^4.16.3",
     "font-awesome": "^4.7.0",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.17",
+    "mongoose-type-email": "^1.0.5",
     "pg": "^7.4.1"
   }
 }
