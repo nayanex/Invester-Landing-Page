@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
 
 require('mongoose-type-email');
-mongoose.connect('mongodb://localhost:27017/invester');
+mongoose.connect('mongodb://heroku_zg1dkqqt:vvm3t52m8rgkt9aa4d13fqa5qf@ds113620-a0.mlab.com:13620,ds113620-a1.mlab.com:13620/heroku_zg1dkqqt?replicaSet=rs-ds113620/invester');
 
 var app = express();
 
